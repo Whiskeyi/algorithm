@@ -29,16 +29,3 @@
     }
     return head; // 返回删除重复节点后的链表
   };
-
-// // head 链表
-// var head = [1, 2, 3, 3, 2, 1];
-// const map = new Map();
-// let rz = new Array;
-// for(node of head) {
-//     map.set(node ,(map.get(node) || 0) + 1);
-// }
-// let len = [...map].length;
-// for(i = 0; i < len; i++) {
-//     rz.push([...map][i][0])
-// }
-// console.log(rz)
