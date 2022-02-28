@@ -44,3 +44,6 @@ console.log(b);
 
 let str3 = '123'
 console.log([...str3].reverse().join(''))
+
+var nums = [0,1,0,3,12]
+nums.sort((m,n) => n? 0: -1)
