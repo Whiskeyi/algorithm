@@ -47,3 +47,31 @@ console.log([...str3].reverse().join(''))
 
 var nums = [0,1,0,3,12]
 nums.sort((m,n) => n? 0: -1)
+
+// 闭包
+/* for (var i = 1; i <= 5; i++) {
+  (function(j) {
+    setTimeout(function timer() {
+      console.log(j)
+    }, 1000)
+  })(i)
+} */
+
+for (var i = 1; i <= 5; i++) {
+  setTimeout(
+    function timer(j) {
+      console.log(j)
+    }, 0, i
+  )
+}
+
+
+const _deleteRepeat = array1 => {
+  // 补全代码
+  const map = new Map();
+  for(arr1 of array1) {
+      map.set(arr1, map.get(arr1) + 1 || 1)
+  }
+  console.log(map.keys());
+}
+_deleteRepeat([-1,1,2,2]);

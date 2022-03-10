@@ -13,10 +13,3 @@ obj.log = console.log;
 obj.log.call(console,this);
 
 console.log(typeof([]));
-
-function * gen() {
-    yield 1;
-    yield 2;
-    yield 3;
-}
-gen();

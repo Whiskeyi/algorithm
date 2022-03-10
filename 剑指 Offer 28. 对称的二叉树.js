@@ -20,6 +20,7 @@
     return check(root.left, root.right);
 };
 
+// 遍历
 var isSymmetric = function(root) {
     if (!root) return true;
     const queue = [root.left, root.right];

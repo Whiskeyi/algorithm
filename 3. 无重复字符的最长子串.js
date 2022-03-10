@@ -2,6 +2,7 @@
  * @param {string} s
  * @return {number}
  */
+// 方法一
  var lengthOfLongestSubstring = function(s) {
     // 哈希集合，记录每个字符是否出现过
     const occ = new Set();
@@ -23,3 +24,26 @@
     }
     return ans;
 };
+// 方法二
+var lengthOfLongestSubstring = function(s) {
+    if(!s) return 0;
+    const map = new Map();
+    let key = 1;
+    let max = 1;
+    for(let i = 0; i < s.length; i++) {
+        map.set(s[i], 1);
+        for(let j = 1; j < s.length - i; j++) {
+            if(map.has(s[i + j])) {
+                key = 1;
+                map.clear();
+                break;
+            }else {
+                key++;
+                if(key > max) max = key;
+                map.set(s[i + j], 1);
+            }
+        }
+    }
+    return max;
+};
+document.getElementsByTagName('ul')
