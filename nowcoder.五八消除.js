@@ -3,7 +3,7 @@
 帮帮同学想知道n个"五"和"八"组成的字符串中，有多少种组合可以满足消除为空字符串。
 现为帮帮同学设计一个方法，输入整数n，表示"五"和"八"的数量，返回n个"五"和n个"八"组成的字符串中，满足消除为空字符串的组合数 */
 
-functiongetTargetNumber(n) {
+function getTargetNumber(n) {
     // write code here
     let res = 0;
     function fun(init, go) {

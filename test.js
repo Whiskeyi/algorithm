@@ -85,5 +85,48 @@
 //   }, 1000);
 
 // }
-console.log(typeof(null));
-console.log(null == Object);
+// console.log(typeof(null));
+// console.log(null == Object);
+
+// var result = 0;
+// function test(result) {
+//     result = 1;
+// }
+// test(2);
+// console.log(result);
+
+// function Test(name) { }
+// Test.name='Tom';
+// Test.prototype.name="John";
+// var result = (new Test('JK')).name;
+// console.log(result);
+
+// console.log([1,undefined,3,5].map((_, n) => n));
+// console.log(null === null);
+// console.log(Symbol('a') === Symbol('a'));
+// console.log(Symbol('a').for === Symbol('a').for);
+
+// let name = 'outer'
+// function showName() {
+//   console.log(name)
+//   let name = 'inner'
+// }
+// name = 'updatedOuter'
+// showName()
+
+// (function() {
+//     var a = b = 5;
+// })();
+// console.log(b);
+// console.log(a);
+
+var m= 1, j = k = 0;
+    function add(n) {
+        return n = n + 1;
+    }
+    y = add(m);
+    function add(n) {
+        return n = n + 3;
+    }
+z = add(m);
+console.log(y, z);
