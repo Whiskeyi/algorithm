@@ -130,8 +130,17 @@
 //     }
 // z = add(m);
 // console.log(y, z);
-function add() {
-    console.log('1');
-}
-console.log(typeof(add()))
-var a=parseInt('111办公室');console.log(a);
+// function add() {
+//     console.log('1');
+// }
+// console.log(typeof(add()))
+// var a=parseInt('111办公室');console.log(a);
+
+// 浅拷贝，无法改变值
+/* var arr = [{old: 'old'}, ['old'], 'old'];
+var new_arr = arr.concat();
+arr[0].old = 'new';
+arr[1][0] = 'new';
+console.log(arr);
+console.log(new_arr);
+ */
