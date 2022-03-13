@@ -120,13 +120,18 @@
 // console.log(b);
 // console.log(a);
 
-var m= 1, j = k = 0;
-    function add(n) {
-        return n = n + 1;
-    }
-    y = add(m);
-    function add(n) {
-        return n = n + 3;
-    }
-z = add(m);
-console.log(y, z);
+// var m= 1, j = k = 0;
+//     function add(n) {
+//         return n = n + 1;
+//     }
+//     y = add(m);
+//     function add(n) {
+//         return n = n + 3;
+//     }
+// z = add(m);
+// console.log(y, z);
+function add() {
+    console.log('1');
+}
+console.log(typeof(add()))
+var a=parseInt('111办公室');console.log(a);
