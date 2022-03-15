@@ -9,6 +9,7 @@ var maxShort = [];
 for(let i = 0; i < arr.length; i++) {
     if(arr[i] == 0) {
         let [m, n] = [i, i];
+        // 设置m, n双指针
         while(m >= 0) {
             m--;
             if(arr[m] == 1) left = m;

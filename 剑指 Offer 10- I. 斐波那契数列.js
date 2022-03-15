@@ -2,6 +2,7 @@
  * @param {number} n
  * @return {number}
  */
+// 动态规划
  var fib = function(n) {
     const MOD = 1000000007;
     if(n < 2) return n;
