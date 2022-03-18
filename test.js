@@ -154,3 +154,32 @@ rl.question('input:', (answer) => {
   console.log(typeof(answer));
   rl.close();
 }); */
+
+/* let str = '123 412';
+let arr = [...str.split(' ')]
+console.log(arr.map(Number)); */
+
+/* var output = (function(x){
+  delete x;
+  console.log(x);
+})(0); */
+
+/*
+var str1=new RegExp("e");
+console.log(str1.exec("hello")); */
+
+/* function Foo(){
+  var i=0;
+  return function(){
+      console.log(i++);
+  }
+}
+var f1=Foo(),
+f2=Foo();
+f1();
+f1();
+f2(); */
+
+
+
+
