@@ -180,6 +180,51 @@ f1();
 f1();
 f2(); */
 
+/* const array = new Array(5).map((item) => {
+  return item = {
+    name: '1'
+  }
+});
+console.log(array); */
 
+/* var fooIsAnArray = [1,2,3], i=0;
+for(;i<2;i++) {
+  fooIsAnArray.splice(i, 1);
+}
+console.log(fooIsAnArray); */
 
+/* val = 1;
+var json = {
+  val: 10,
+  exec: function(fn) {
+    this.val = this.val + val + fn(val);
+  } // 10 + 1 + 9
+};
+var fn = (function(val) {
+  return function() {
+    return val * 2 + this.val;
+  }; // 9
+})(4);
+json.exec(fn); // 20
+console.log(val + json.val); // 1 + 20 */
 
+/* (function(){
+  console.log(1);
+}) */
+/* fun();
+function fun(){console.log(1)}
+//提升后
+function fun(){console.log(1)}
+fun(); //正常执行fun(),输出1 */
+/* fn();
+var fn = function(){console.log(1);};
+//实际上
+var fn //提升变量
+fn()  // fn is not a function
+fn = function(){console.log(1)} //原来的位置 */
+
+/* console.log(([])?true:false);
+console.log(([]==false?true:false));
+console.log(({}==false)?true:false); */
+
+var a = []; console.log(typeof a);
