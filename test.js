@@ -227,4 +227,6 @@ fn = function(){console.log(1)} //原来的位置 */
 console.log(([]==false?true:false));
 console.log(({}==false)?true:false); */
 
-var a = []; console.log(typeof a);
+// var a = []; console.log(typeof a);
+
+// console.log( 0 === false);s
