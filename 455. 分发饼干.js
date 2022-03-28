@@ -4,8 +4,10 @@
  * @return {number}
  */
  var findContentChildren = function(g, s) {
-    g.sort((a, b) => a - b); // 胃口
-    s.sort((a, b) => a - b); // 饼干尺寸
+    // 胃口
+    g.sort((a, b) => a - b);
+    // 饼干尺寸
+    s.sort((a, b) => a - b);
     let maxNum = 0;
     for(let i = 0; i < g.length;) {
         while(s.length >= 1) {
