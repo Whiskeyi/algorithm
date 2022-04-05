@@ -230,3 +230,25 @@ console.log(({}==false)?true:false); */
 // var a = []; console.log(typeof a);
 
 // console.log( 0 === false);s
+
+async function async1() {
+  console.log("2");
+  await  async2();
+  console.log("7");
+
+}
+async function async2() {
+ console.log( '3');
+}
+console.log("1");
+setTimeout(function () {
+  console.log("8");
+},0);
+async1();
+new Promise(function (resolve) {
+  console.log("4");
+  resolve();
+}).then(function () {
+  console.log("6");
+});
+console.log('5');
