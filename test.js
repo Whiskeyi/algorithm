@@ -231,24 +231,92 @@ console.log(({}==false)?true:false); */
 
 // console.log( 0 === false);s
 
-async function async1() {
-  console.log("2");
-  await  async2();
-  console.log("7");
+/* async function async1() {
+    console.log("2");
+    await  async2();
+    console.log("7");
 
-}
-async function async2() {
- console.log( '3');
-}
-console.log("1");
-setTimeout(function () {
-  console.log("8");
-},0);
-async1();
-new Promise(function (resolve) {
-  console.log("4");
-  resolve();
-}).then(function () {
-  console.log("6");
-});
-console.log('5');
+  }
+  async function async2() {
+   console.log( '3');
+  }
+  console.log("1");
+  setTimeout(function () {
+    console.log("8");
+  },0);
+  async1();
+  new Promise(function (resolve) {
+    console.log("4");
+    resolve();
+  }).then(function () {
+    console.log("6");
+  });
+  console.log('5'); */
+
+ /*  showName()
+  var showName = function() {
+    console.log(2);
+  }
+  function showName() {
+    console.log(1);
+  } */
+
+/*   function foo() {
+      var a = 1;
+      let b = 2;
+      {
+          let b = 3;
+          var c = 4;
+          let d = 5;
+          console.log(a);
+          console.log(b);
+      }
+      console.log(b);
+      console.log(c);
+      console.log(d);
+  }
+  foo(); */
+
+/*   let myname = '极客时间'
+  {
+      console.log(myname)
+      let myname = '极客邦'
+  } */
+
+ /*  function bar() {
+    var myName = '极客世界';
+    let test1 = 100;
+    if(1) {
+      let myName = 'Chorme浏览器';
+      console.log(test);
+    }
+  }
+  function foo() {
+    var myName = '极客邦';
+    let test = 2;
+    {
+      let test = 3;
+      bar();
+    }
+  }
+  var myName = "极客时间"
+  let myAge = 10;
+  let test = 1;
+  foo(); */
+
+ /*  var bar = {
+    myName: "time.geekbang.com",
+    printName: function() {
+      console.log(myName);
+      console.log(this.myName);
+    }
+  }
+  function foo() {
+    let myName = "极客时间";
+    return bar.printName;
+  }
+  let myName = "极客邦";
+  let _printName = foo();
+
+  _printName();
+  bar.printName(); */
