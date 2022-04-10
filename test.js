@@ -320,3 +320,109 @@ console.log(({}==false)?true:false); */
 
   _printName();
   bar.printName(); */
+
+  /* function executor(resolve, reject) {
+    let rand = Math.random();
+    console.log(1);
+    console.log(rand);
+    if(rand > 0.5) resolve();
+    else reject();
+  }
+  var p0 = new Promise(executor);
+  var p1 = p0.then((value) => {
+    console.log("succeed-1");
+    return new Promise(executor);
+  })
+  var p3 = p1.then((value) => {
+    console.log("succeed-2");
+    return new Promise(executor);
+  })
+  var p4 = p3.then((value) => {
+    console.log("succeed-3");
+    return new Promise(executor);
+  })
+  p4.catch((error) => {
+    console.log("error");
+  })
+  console.log(2); */
+
+  /* function executor(resolve, reject) {
+    resolve(100);
+  }
+  let demo = new Promise(executor);
+  function onResolve(value) {
+    console.log(value);
+  }
+  demo.then(onResolve); */
+
+  // 模拟实现Promise
+  /* function Bromise(executor) {
+    var onResolve_ = null;
+    var onReject_ = null;
+    // 模拟实现resolve和then，暂不支持reject
+    console.log(this);
+    this.then = function(onResolve, onReject) {
+      onResolve_ = onResolve;
+    };
+    function resolve(value) {
+      setTimeout(() => {
+        onResolve_(value);
+      },0);
+    }
+    executor(resolve, null);
+  }
+
+  function executor(resolve, reject) {
+    resolve(100);
+  }
+  let demo = new Bromise(executor);
+  function onResolve(value) {
+    console.log(value);
+  }
+  demo.then(onResolve); */
+
+/*   // ES7 async/await
+  async function foo() {
+    try{
+      let response1 = await fetch('https://www.geekbang.org');
+      console.log('response1');
+      console.log(response1);
+      let response2 = await fetch('https://www.geekbang.org/test');
+      console.log('response2');
+      console.log(response2);
+    }catch(err) {
+      console.error(err);
+    }
+  }
+  foo(); */
+
+/*   async function foo() {
+    console.log(1);
+    let a = await 100;
+    console.log(a);
+    console.log(2);
+  }
+  console.log(0);
+  foo();
+  console.log(3); */
+
+  /* async function foo() {
+    console.log('foo');
+  }
+  async function bar() {
+    console.log('bar start');
+    await foo();
+    console.log('bar end');
+  }
+  console.log('script start');
+  setTimeout(function() {
+    console.log('setTimeout');
+  }, 0);
+  bar();
+  new Promise(function(resolve) {
+    console.log('promise executor');
+    resolve();
+  }).then(function() {
+    console.log('promise then');
+  })
+  console.log('script end'); */
