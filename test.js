@@ -426,3 +426,29 @@ console.log(({}==false)?true:false); */
     console.log('promise then');
   })
   console.log('script end'); */
+
+/*   var k = 0;
+  for(var i=0,j=0;i<10,j<6;i++,j++){
+      k += i + j;
+  }
+  console.log(k); */
+/*
+  var a = 4399 < 0 || typeof(4399 + '');
+  console.log(a);
+ */
+
+/* let A = function() {}
+A.prototype.a = 1;
+let B = new A();
+A.prototype = {
+  b: 2,
+  c: 3
+}
+let C = new A();
+A.prototype.d = 4;
+console.log(B.a);
+console.log(B.b);
+console.log(C.c);
+console.log(C.d); */
+
+// console.log(+new Array(017));
