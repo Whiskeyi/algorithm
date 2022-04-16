@@ -452,3 +452,108 @@ console.log(C.c);
 console.log(C.d); */
 
 // console.log(+new Array(017));
+
+/* var i = 100;
+function foo() {
+    bbb: try {
+        console.log("position1");
+        return i++;  }
+    finally {
+        break bbb;
+    }
+    console.log("position2");
+    return i;
+}
+foo();
+console.log(i); */
+
+/* var name="World!";
+(function(){
+    var name;
+    if(typeof name=== 'undefined'){
+        name='Jack';
+        console.log('Goodbye'+name);
+    }
+    else{
+        console.log('hello'+name);
+    }
+})(); */
+
+// for(let i=0;i<12;i++){} console.log(i);
+/* const a = 12;a=13;
+console.log(a); */
+
+/* const g = {b:3};
+console.log(g.b);
+g.b=12;console.log(g.b);
+let [head,...tail] = [1,2,3,4];
+console.log(tail); */
+
+/* function outer(){
+  var num = 0;
+   function inner(){
+        num++;
+        console.log(num);
+  }
+      return inner;
+}
+var f1 = outer();
+f1();
+f1();
+var f2 = outer();
+f2();
+f2(); */
+
+/* var p1 = {
+  name:'小明',
+  age:'12',
+  action:function(where,doing){
+   console.log(this.age + '岁的'+this.name + '在' + where + doing);
+  }
+}
+var p2 = {
+  name:'小红',
+  age:'15'
+}
+console.log(p1.action.call(p2,'操场上','运动')) */
+
+/* var a = 'w'
+let obj = {
+  a: 'o',
+  print: function() {
+    console.log(this.a);
+  },
+  print2: () => {
+    console.log(this.a);
+  }
+}
+let p = obj.print;
+let p2 = obj.print2;
+obj.print();
+obj.print2();
+p();
+p2(); */
+
+/* var foo= "Hello";
+(function(){
+    var bar = "World";
+    alert(foo + bar);
+})();
+alert(foo + bar); */
+
+/* var user = {
+  count : 1,
+  getCount: function(){
+   return this.count;
+  }
+ }
+ var func = user.getCount
+ console.log(func()) */
+
+/*  (function() {
+  var x = foo();
+  var foo = function foo() {
+      return "foobar"
+  };
+  console.log(x);
+})(); */
