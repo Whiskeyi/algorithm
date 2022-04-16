@@ -557,3 +557,6 @@ alert(foo + bar); */
   };
   console.log(x);
 })(); */
+
+var arr = [];
+console.log(arr);
