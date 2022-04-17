@@ -558,5 +558,23 @@ alert(foo + bar); */
   console.log(x);
 })(); */
 
-var arr = [];
-console.log(arr);
+/* let a = 1;
+let obj = {
+  x: 1
+}
+delete a;
+delete obj.x;
+delete 2;
+console.log(a);
+console.log(obj.x);
+console.log(2); */
+
+/* let date = new Date()
+setTimeout(() => {
+    console.log('1')
+}, 2000)
+setTimeout('console.log(2)',1000);
+setTimeout(function() {
+  console.log('3')
+}, 1500);
+while((new Date() - date) < 3000) {} */
