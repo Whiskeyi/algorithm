@@ -9,12 +9,12 @@ for(var i = 0; i < arr.length; i++){
 console.log(s); */
 
 // 方法二，通过map
-/* const arr = [1, 1, 2, 2, 2, 3, 3];
+const arr = [1, 1, 2, 2, 2, 3, 3];
 const map = new Map();
 for(num of arr) {
     map.set(num, map.get(num) + 1 || 1);
 }
-console.log([...map.keys()]); */
+console.log([...map.keys()]);
 
 // 方法三，通过splice删除，两层循环
 /* const arr = [1, 1, 2, 2, 2, 3, 3];
@@ -37,4 +37,3 @@ for(var i = 0; i < arr.length; i++){
     }
 }
 console.log(s); */
-console.log('2' + 3 + 4)
