@@ -24,17 +24,17 @@ let nums = [-4, -1, 0, -9];
 let k = 9;
 var subarraysDivByK = function(nums, k) {
     let preSum = [];
-    let rz = 0;
-    const map = new Map();
-    map.set(0, 1);
     let sum = 0;
     for(let i = 0; i < nums.length; i++) {
         sum += nums[i];
         preSum.push(sum);
     }
+    const map = new Map();
+    map.set(0, 1);
     for(let num of preSum) {
         map.set((num % k + k) % k, map.get((num % k + k) % k) + 1 || 1);
     }
+    let rz = 0;
     [...map.values()].forEach((item) => rz += (item * (item - 1)) / 2)
     return rz;
 };
