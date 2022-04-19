@@ -578,3 +578,6 @@ setTimeout(function() {
   console.log('3')
 }, 1500);
 while((new Date() - date) < 3000) {} */
+
+let arr = [0, 2, 4, 5];
+console.log(arr.reduce((s, t) => s += t));
