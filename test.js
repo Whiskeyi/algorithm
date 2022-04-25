@@ -579,5 +579,33 @@ setTimeout(function() {
 }, 1500);
 while((new Date() - date) < 3000) {} */
 
-let arr = [0, 2, 4, 5];
-console.log(arr.reduce((s, t) => s += t));
+/* let arr = [0, 2, 4, 5];
+console.log(arr.reduce((s, t) => s += t)); */
+
+/* console.log(typeof undefined);
+console.log(Number(null)); */
+
+/* Promise.resolve(1)
+  .then(2)
+  .then(Promise.resolve(3))
+  .then(console.log) */
+
+  const p = function() {
+    return new Promise((resolve, reject) => {
+      const p1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve(1)
+        }, 0)
+        // resolve(2)
+      })
+      p1.then((res) => {
+        console.log(res);
+      })
+      console.log(3);
+      resolve(4);
+    })
+  }
+  p().then((res) => {
+    console.log(res);
+  })
+  console.log('end')
