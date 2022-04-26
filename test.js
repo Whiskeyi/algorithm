@@ -596,7 +596,7 @@ console.log(Number(null)); */
         setTimeout(() => {
           resolve(1)
         }, 0)
-        // resolve(2)
+        resolve(2)
       })
       p1.then((res) => {
         console.log(res);
