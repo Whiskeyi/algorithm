@@ -590,7 +590,7 @@ console.log(Number(null)); */
   .then(Promise.resolve(3))
   .then(console.log) */
 
-  const p = function() {
+/*   const p = function() {
     return new Promise((resolve, reject) => {
       const p1 = new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -608,4 +608,53 @@ console.log(Number(null)); */
   p().then((res) => {
     console.log(res);
   })
-  console.log('end')
+  console.log('end') */
+
+/* var number = 5;
+var obj = {
+  number: 3,
+  fn1: (function() {
+    var number;
+    this.number *= 2;
+    number = number * 2;
+    number = 3;
+    return function() {
+      var num = this.number;
+      this.number *= 2;
+      console.log(num);
+      number *= 3;
+      console.log(number);
+    }
+  })()
+}
+var fn1 = obj.fn1;
+fn1.call(null);
+obj.fn1();
+console.log(window.number); */
+
+/* var obj = {
+  hi: function(){
+      console.log(this);
+      return ()=>{
+          console.log(this);
+      }
+  },
+  sayHi: function(){
+      return function() {
+          console.log(this);
+          return ()=>{
+              console.log(this);
+          }
+      }
+  },
+  say: ()=>{
+      console.log(this);
+  }
+}
+let hi = obj.hi();  //输出obj对象
+hi();               //输出obj对象
+let sayHi = obj.sayHi();
+let fun1 = sayHi(); //输出window
+fun1();             //输出window
+obj.say();          //输出window */
+
