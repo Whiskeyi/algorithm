@@ -658,3 +658,47 @@ let fun1 = sayHi(); //输出window
 fun1();             //输出window
 obj.say();          //输出window */
 
+/* async function async1(){
+  console.log('async1')
+  await async2()
+  console.log('async1 end')
+}
+async function async2(){
+  console.log('async2')
+}
+console.log('script start')
+setTimeout(() =>{
+  console.log('setTimeOut')
+},0)
+async1()
+new Promise((resolve) => {
+  console.log('promise')
+  resolve()
+}).then(() =>{
+  console.log('promise2')
+})
+console.log('script end') */
+
+// script start
+// async1
+// async2
+// promise
+// script end
+// async1 end
+// promise 2
+// setTimeout
+
+/* var array = [4, 2, 5, 3, 1];
+function compare(a, b) {
+  console.log(a,b);
+  return a - b;
+}
+array.sort(compare);
+// 比较 + 二分 */
+
+/* const arr = [1, 1, 2, 2, 3, 3, 3];
+function deRepeat() {ß
+  return [...new Set(arr)]
+}
+console.log(deRepeat(arr)) */
+

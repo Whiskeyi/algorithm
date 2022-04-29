@@ -37,3 +37,8 @@ for(var i = 0; i < arr.length; i++){
     }
 }
 console.log(s); */
+
+// 方法五，es6新增set去重
+function deRepeat() {
+    return [...new Set(arr)]
+  }
