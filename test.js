@@ -697,8 +697,24 @@ array.sort(compare);
 // 比较 + 二分 */
 
 /* const arr = [1, 1, 2, 2, 3, 3, 3];
-function deRepeat() {ß
+function deRepeat() {
   return [...new Set(arr)]
 }
 console.log(deRepeat(arr)) */
 
+/* var o = new Object
+o[Symbol.iterator] = function() {
+    var v = 0
+    return {
+        next: function() {
+            return { value: v++, done: v > 10 }
+        }
+    }
+};
+for(var v of o)
+    console.log(v); // 0 1 2 3 ... 9 */
+
+/* const map = new Map();
+map.set(0, 1);
+console.log(map.get(1) + 1 || 1) // NaN || 1
+map.get(num) ? map.get(num) + 1 : 1 */
