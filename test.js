@@ -718,3 +718,20 @@ for(var v of o)
 map.set(0, 1);
 console.log(map.get(1) + 1 || 1) // NaN || 1
 map.get(num) ? map.get(num) + 1 : 1 */
+
+// console.log(Math.max())
+
+/* var a = '011'
+console.log(parseInt(a)) */
+
+// console.log(false == undefined)
+
+/* console.log(null instanceof Object);
+console.log(typeof(null)) */
+
+/* var x = 1;
+console.log(x++ + ++x + x) // 1 + 3 + 3 */
+
+/* var str = "what is this";
+var k = str.search("is");
+console.log(k) */
