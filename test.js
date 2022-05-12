@@ -16,7 +16,7 @@ console.log(str.slice(0, 3)) */
 /* // 浅拷贝
 
 let a = {
-  name: "muyiy",
+  name: "muYiy",
   book: {
       title: "You Don't Know JS",
       price: "45"
@@ -25,7 +25,7 @@ let a = {
 let b = {...a};
 console.log(b);
 {
-    name: "muyiy",
+    name: "muYiy",
     book: {title: "You Don't Know JS", price: "45"}
 } */
 
@@ -38,7 +38,7 @@ console.log(a);
 // }
 console.log(b);
 // {
-//     name: "muyiy",
+//     name: "muYiy",
 //     book: {title: "You Don't Know JS", price: "55"}
 // } */
 
@@ -277,10 +277,10 @@ console.log(({}==false)?true:false); */
   }
   foo(); */
 
-/*   let myname = '极客时间'
+/*   let myName = '极客时间'
   {
-      console.log(myname)
-      let myname = '极客邦'
+      console.log(myName)
+      let myName = '极客邦'
   } */
 
  /*  function bar() {
@@ -305,7 +305,7 @@ console.log(({}==false)?true:false); */
   foo(); */
 
  /*  var bar = {
-    myName: "time.geekbang.com",
+    myName: "time.geekBang.com",
     printName: function() {
       console.log(myName);
       console.log(this.myName);
@@ -356,7 +356,7 @@ console.log(({}==false)?true:false); */
   demo.then(onResolve); */
 
   // 模拟实现Promise
-  /* function Bromise(executor) {
+  /* function Promise(executor) {
     var onResolve_ = null;
     var onReject_ = null;
     // 模拟实现resolve和then，暂不支持reject
@@ -375,7 +375,7 @@ console.log(({}==false)?true:false); */
   function executor(resolve, reject) {
     resolve(100);
   }
-  let demo = new Bromise(executor);
+  let demo = new Promise(executor);
   function onResolve(value) {
     console.log(value);
   }
