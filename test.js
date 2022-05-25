@@ -253,13 +253,13 @@ console.log(({}==false)?true:false); */
   });
   console.log('5'); */
 
- /*  showName()
-  var showName = function() {
-    console.log(2);
-  }
-  function showName() {
-    console.log(1);
-  } */
+/*  showName()
+ var showName = function() {
+   console.log(2);
+ }
+ function showName() {
+   console.log(1);
+ } */
 
 /*   function foo() {
       var a = 1;
@@ -283,103 +283,103 @@ console.log(({}==false)?true:false); */
       let myName = '极客邦'
   } */
 
- /*  function bar() {
-    var myName = '极客世界';
-    let test1 = 100;
-    if(1) {
-      let myName = 'Chorme浏览器';
-      console.log(test);
-    }
-  }
-  function foo() {
-    var myName = '极客邦';
-    let test = 2;
-    {
-      let test = 3;
-      bar();
-    }
-  }
-  var myName = "极客时间"
-  let myAge = 10;
-  let test = 1;
-  foo(); */
+/*  function bar() {
+   var myName = '极客世界';
+   let test1 = 100;
+   if(1) {
+     let myName = 'Chorme浏览器';
+     console.log(test);
+   }
+ }
+ function foo() {
+   var myName = '极客邦';
+   let test = 2;
+   {
+     let test = 3;
+     bar();
+   }
+ }
+ var myName = "极客时间"
+ let myAge = 10;
+ let test = 1;
+ foo(); */
 
- /*  var bar = {
-    myName: "time.geekBang.com",
-    printName: function() {
-      console.log(myName);
-      console.log(this.myName);
-    }
-  }
-  function foo() {
-    let myName = "极客时间";
-    return bar.printName;
-  }
-  let myName = "极客邦";
-  let _printName = foo();
+/*  var bar = {
+   myName: "time.geekBang.com",
+   printName: function() {
+     console.log(myName);
+     console.log(this.myName);
+   }
+ }
+ function foo() {
+   let myName = "极客时间";
+   return bar.printName;
+ }
+ let myName = "极客邦";
+ let _printName = foo();
 
-  _printName();
-  bar.printName(); */
+ _printName();
+ bar.printName(); */
 
-  /* function executor(resolve, reject) {
-    let rand = Math.random();
-    console.log(1);
-    console.log(rand);
-    if(rand > 0.5) resolve();
-    else reject();
-  }
-  var p0 = new Promise(executor);
-  var p1 = p0.then((value) => {
-    console.log("succeed-1");
-    return new Promise(executor);
-  })
-  var p3 = p1.then((value) => {
-    console.log("succeed-2");
-    return new Promise(executor);
-  })
-  var p4 = p3.then((value) => {
-    console.log("succeed-3");
-    return new Promise(executor);
-  })
-  p4.catch((error) => {
-    console.log("error");
-  })
-  console.log(2); */
+/* function executor(resolve, reject) {
+  let rand = Math.random();
+  console.log(1);
+  console.log(rand);
+  if(rand > 0.5) resolve();
+  else reject();
+}
+var p0 = new Promise(executor);
+var p1 = p0.then((value) => {
+  console.log("succeed-1");
+  return new Promise(executor);
+})
+var p3 = p1.then((value) => {
+  console.log("succeed-2");
+  return new Promise(executor);
+})
+var p4 = p3.then((value) => {
+  console.log("succeed-3");
+  return new Promise(executor);
+})
+p4.catch((error) => {
+  console.log("error");
+})
+console.log(2); */
 
-  /* function executor(resolve, reject) {
-    resolve(100);
-  }
-  let demo = new Promise(executor);
-  function onResolve(value) {
-    console.log(value);
-  }
-  demo.then(onResolve); */
+/* function executor(resolve, reject) {
+  resolve(100);
+}
+let demo = new Promise(executor);
+function onResolve(value) {
+  console.log(value);
+}
+demo.then(onResolve); */
 
-  // 模拟实现Promise
-  /* function Promise(executor) {
-    var onResolve_ = null;
-    var onReject_ = null;
-    // 模拟实现resolve和then，暂不支持reject
-    console.log(this);
-    this.then = function(onResolve, onReject) {
-      onResolve_ = onResolve;
-    };
-    function resolve(value) {
-      setTimeout(() => {
-        onResolve_(value);
-      },0);
-    }
-    executor(resolve, null);
+// 模拟实现Promise
+/* function Promise(executor) {
+  var onResolve_ = null;
+  var onReject_ = null;
+  // 模拟实现resolve和then，暂不支持reject
+  console.log(this);
+  this.then = function(onResolve, onReject) {
+    onResolve_ = onResolve;
+  };
+  function resolve(value) {
+    setTimeout(() => {
+      onResolve_(value);
+    },0);
   }
+  executor(resolve, null);
+}
 
-  function executor(resolve, reject) {
-    resolve(100);
-  }
-  let demo = new Promise(executor);
-  function onResolve(value) {
-    console.log(value);
-  }
-  demo.then(onResolve); */
+function executor(resolve, reject) {
+  resolve(100);
+}
+let demo = new Promise(executor);
+function onResolve(value) {
+  console.log(value);
+}
+demo.then(onResolve); */
 
 /*   // ES7 async/await
   async function foo() {
@@ -406,26 +406,26 @@ console.log(({}==false)?true:false); */
   foo();
   console.log(3); */
 
-  /* async function foo() {
-    console.log('foo');
-  }
-  async function bar() {
-    console.log('bar start');
-    await foo();
-    console.log('bar end');
-  }
-  console.log('script start');
-  setTimeout(function() {
-    console.log('setTimeout');
-  }, 0);
-  bar();
-  new Promise(function(resolve) {
-    console.log('promise executor');
-    resolve();
-  }).then(function() {
-    console.log('promise then');
-  })
-  console.log('script end'); */
+/* async function foo() {
+  console.log('foo');
+}
+async function bar() {
+  console.log('bar start');
+  await foo();
+  console.log('bar end');
+}
+console.log('script start');
+setTimeout(function() {
+  console.log('setTimeout');
+}, 0);
+bar();
+new Promise(function(resolve) {
+  console.log('promise executor');
+  resolve();
+}).then(function() {
+  console.log('promise then');
+})
+console.log('script end'); */
 
 /*   var k = 0;
   for(var i=0,j=0;i<10,j<6;i++,j++){
@@ -776,3 +776,56 @@ console.log(k) */
 // 内部第二个then
 // 内部第二个then2
 // 外部第二个then
+
+/* let arr = [1, 3, 3, 4, 5, null, 'X'];
+arr.splice(0, 1, 2)
+console.log(arr) */
+
+/* const person = {
+  isHuman: false,
+  printIntroduction: function () {
+    console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+  }
+};
+
+const me = object_create(person);
+
+me.name = 'Matthew'; // "name" is a property set on "me", but not on "person"
+me.isHuman = true; // inherited properties can be overwritten
+
+me.printIntroduction();
+// expected output: "My name is Matthew. Am I human? true"
+
+function object_create(obj) {
+  // obj为新创建对象的原型对象
+  function F() { };
+  F.prototype = obj;
+  return new F();
+} */
+
+/* function instance_of(left, right) {
+  let proto = Object.getPrototypeOf(left), // 获得对象的原型
+    prototype = right.prototype; // 获取构造函数的 prototype 对象
+  // 判断构造函数的 prototype 对象是否在对象的原型链上
+  while (true) {
+    if (!proto) return false;
+    if (proto === prototype) return true;
+    proto = Object.getPrototypeOf(proto);
+  }
+}
+
+// 测试
+function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+const auto = new Car('Honda', 'Accord', 1998);
+
+console.log(instance_of(auto, Car));
+// expected output: true
+
+console.log(instance_of(auto, Object));
+// expected output: true */
+
+
