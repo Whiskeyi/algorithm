@@ -828,4 +828,7 @@ console.log(instance_of(auto, Car));
 console.log(instance_of(auto, Object));
 // expected output: true */
 
+// console.log(undefined == 0);
 
+// let [, second, fourth] = [1, 2, 3, 4];
+// console.log(fourth); // 3
