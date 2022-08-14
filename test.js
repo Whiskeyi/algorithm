@@ -29,6 +29,9 @@ console.log(b);
     book: {title: "You Don't Know JS", price: "45"}
 } */
 
+let nums = [5,4,3,2,1];
+console.log(nums.sort((a, b) => a - b));
+
 /* a.name = "change";
 a.book.price = "55";
 console.log(a);
