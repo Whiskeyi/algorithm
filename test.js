@@ -29,8 +29,8 @@ console.log(b);
     book: {title: "You Don't Know JS", price: "45"}
 } */
 
-let nums = [5,4,3,2,1];
-console.log(nums.sort((a, b) => a - b));
+// let nums = [5,4,3,2,1];
+// console.log(nums.sort((a, b) => a - b));
 
 /* a.name = "change";
 a.book.price = "55";
@@ -835,3 +835,14 @@ console.log(instance_of(auto, Object));
 
 // let [, second, fourth] = [1, 2, 3, 4];
 // console.log(fourth); // 3
+
+// let arr = [];
+// console.log(valueOf(arr), arr.toString())
+
+// const one = 0.1
+// const two = 0.2
+// const three = 0.3
+// console.log([two - one == one, three - two == one]);
+
+/* let arr = [, , , , ,]
+console.log(arr.length) */
