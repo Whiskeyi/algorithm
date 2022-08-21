@@ -846,3 +846,31 @@ console.log(instance_of(auto, Object));
 
 /* let arr = [, , , , ,]
 console.log(arr.length) */
+
+/* function A(cName) {
+  if (cName) {
+    this.name = cName
+  }
+}
+A.prototype.name = 'XiaoMi'
+var a = new A()
+console.log('A', a.name) */
+
+/* function B(cName) {
+  this.name = cName
+}
+B.prototype.name = 'Xiaomi'
+var b = new B()
+console.log('B', b.name) */
+
+/* let oldValue = 2;
+let newValue = oldValue << 3;
+console.log(newValue) */
+
+/* var callbacks = []
+for (var i = 0; i < 4; i++) {
+  callbacks.push(function () {
+    console.log(i);
+  });
+}
+callbacks.forEach(cb => cb()); */
