@@ -635,23 +635,23 @@ fn1.call(null);
 obj.fn1();
 console.log(window.number); */
 
-/* var obj = {
-  hi: function(){
+var obj = {
+  hi: function () {
+    console.log(this);
+    return () => {
       console.log(this);
-      return ()=>{
-          console.log(this);
-      }
+    }
   },
-  sayHi: function(){
-      return function() {
-          console.log(this);
-          return ()=>{
-              console.log(this);
-          }
-      }
-  },
-  say: ()=>{
+  sayHi: function () {
+    return function () {
       console.log(this);
+      return () => {
+        console.log(this);
+      }
+    }
+  },
+  say: () => {
+    console.log(this);
   }
 }
 let hi = obj.hi();  //输出obj对象
@@ -659,7 +659,7 @@ hi();               //输出obj对象
 let sayHi = obj.sayHi();
 let fun1 = sayHi(); //输出window
 fun1();             //输出window
-obj.say();          //输出window */
+obj.say();          //输出window
 
 /* async function async1(){
   console.log('async1')
@@ -874,3 +874,7 @@ for (var i = 0; i < 4; i++) {
   });
 }
 callbacks.forEach(cb => cb()); */
+
+// var obj = { a: 1, b: function () { console.log(this.a) } };
+// var fun = obj.b;
+// console.log(fun())
