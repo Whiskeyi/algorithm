@@ -635,7 +635,7 @@ fn1.call(null);
 obj.fn1();
 console.log(window.number); */
 
-var obj = {
+/* var obj = {
   hi: function () {
     console.log(this);
     return () => {
@@ -659,7 +659,7 @@ hi();               //输出obj对象
 let sayHi = obj.sayHi();
 let fun1 = sayHi(); //输出window
 fun1();             //输出window
-obj.say();          //输出window
+obj.say();          //输出window */
 
 /* async function async1(){
   console.log('async1')
