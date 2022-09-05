@@ -878,3 +878,40 @@ callbacks.forEach(cb => cb()); */
 // var obj = { a: 1, b: function () { console.log(this.a) } };
 // var fun = obj.b;
 // console.log(fun())
+
+// function getPersonInfo(one, two, three) {
+//   console.log(one);
+//   console.log(two);
+//   console.log(three);
+// }
+
+// const person = 'Lydia';
+// const age = 21;
+
+// console.log(getPersonInfo`${person} is ${age} years old`)
+
+
+/* // 箭头函数，this指向弄弄透
+let x = 10;
+let foo = () => {
+  console.log(x)
+  let x = 20;
+  x++;
+}
+foo(); */
+
+/* console.log(/\W/.test('abc'));
+console.log(/\d/.test('abc'));
+console.log(/\d/.test('1234'));
+console.log(/\w/.test('abc')); */
+
+/* function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+const member = new Person('Lydia', 'Hallie');
+// 在 JavaScript 中，函数是对象，因此，方法getFullName被添加到构造函数对象本身。
+// 因此，我们可以调用Person.getFullName()，但member.getFullName会抛出TypeError。
+// 如果您希望一个方法可用于所有对象实例，则必须将其添加到原型属性中：
+Person.prototype.getFullName = () => this.firstName + this.lastName
+console.log(member.getFullName()); */
