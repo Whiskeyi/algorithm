@@ -915,3 +915,24 @@ const member = new Person('Lydia', 'Hallie');
 // 如果您希望一个方法可用于所有对象实例，则必须将其添加到原型属性中：
 Person.prototype.getFullName = () => this.firstName + this.lastName
 console.log(member.getFullName()); */
+
+/* 获取最值方便的方法
+var value = [1, 2, 3, 6, 8, 4];
+console.log(Math.max.apply(Math, value)) */
+
+/* function Foo() {
+  getName = function () { console.log(1) }
+  return this
+}
+Foo.getName = function () { console.log(2) }
+Foo.prototype.getName = function () { console.log(3) }
+var getName = function () { console.log(4) }
+function getName() { console.log(5) }
+
+Foo.getName(); // 1
+getName(); // 4
+Foo().getName(); // 1
+getName(); // 1
+new Foo.getName(); // 2
+new Foo().getName();
+new new Foo().getName(); */
