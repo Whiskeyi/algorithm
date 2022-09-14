@@ -4,6 +4,7 @@ const getResult = (str) => {
   let count = 0;
   for (let i = 0; i <= str.length - 5; i++) {
     let string = str.slice(i, i + 5);
+    // 好像这里用new set会更方便
     let map = new Map();
     for (let st of string) {
       map.set(st, map.get(st) + 1 || 1)
@@ -15,6 +16,7 @@ const getResult = (str) => {
       let sums = 0;
       let index = 0;
       for (let st of string) {
+        // 可以用has对方法，这里过于复杂
         if ((st !== 'a' || st !== 'e' || st !== 'i' || st !== 'o' || st !== 'u')
           && (index === 0 || index === 3)) {
           sum++
