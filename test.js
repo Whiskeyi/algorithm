@@ -936,3 +936,11 @@ getName(); // 1
 new Foo.getName(); // 2
 new Foo().getName();
 new new Foo().getName(); */
+
+/* function fun1() {
+  return "fun1";
+}
+let fun2;
+fun2 = fun1;
+fun1 = null;
+console.log(fun2()); */
