@@ -16,7 +16,7 @@ const getResult = (str) => {
       let sums = 0;
       let index = 0;
       for (let st of string) {
-        // 可以用has对方法，这里过于复杂
+        // 可以用has方法，这里过于复杂
         if ((st !== 'a' || st !== 'e' || st !== 'i' || st !== 'o' || st !== 'u')
           && (index === 0 || index === 3)) {
           sum++
