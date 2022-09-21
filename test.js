@@ -916,7 +916,7 @@ const member = new Person('Lydia', 'Hallie');
 Person.prototype.getFullName = () => this.firstName + this.lastName
 console.log(member.getFullName()); */
 
-/* 获取最值方便的方法
+/* // 获取最值方便的方法
 var value = [1, 2, 3, 6, 8, 4];
 console.log(Math.max.apply(Math, value)) */
 
@@ -944,3 +944,26 @@ let fun2;
 fun2 = fun1;
 fun1 = null;
 console.log(fun2()); */
+
+// let obj = {
+//   p: [
+//     'hello',
+//     {
+//       y: 'abc'
+//     }
+//   ]
+// }
+
+// let { p, p: [x, { y }] } = obj;
+
+// console.log(obj)
+
+// let a = [];
+// let b = "0"
+// console.log(a == 0);
+// console.log(a == !a)
+// console.log(b == 0)
+// console.log(a == b)
+// console.log(!a)
+
+// console.log(typeof NaN)
