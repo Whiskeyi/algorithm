@@ -967,3 +967,6 @@ console.log(fun2()); */
 // console.log(!a)
 
 // console.log(typeof NaN)
+
+// console.log(!![])
+// console.log(~~'1124')
