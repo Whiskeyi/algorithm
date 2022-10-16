@@ -985,3 +985,4 @@ var fn = obj.fn;
 obj.fn(6);
 fn(4); */
 
+// console.log(Number([0, 3, 0].reverse().join('')))
