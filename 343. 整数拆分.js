@@ -3,13 +3,15 @@
  * @return {number}
  */
 var integerBreak = function (n) {
-  let dp = new Array(n).fill(0);
+  let dp = [];
+  dp[0] = 0;
+  dp[1] = 1;
   for (let i = 2; i <= n; i++) {
-    let maxVal = 0;
-    for (let j = 1; j < i; j++) {
-      maxVal = Math.max(maxVal, Math.max(dp[i - j] * j, (i - j) * j));
+    let max = -Infinity;
+    for (j = 1; j < i; j++) {
+      max = Math.max(Math.max(dp[i - j] * j, (i - j) * j), max);
     }
-    dp[i] = maxVal;
+    dp[i] = max;
   }
-  return dp[n];
+  return dp[n]
 };
