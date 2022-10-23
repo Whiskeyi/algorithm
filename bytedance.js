@@ -16,4 +16,5 @@ const getResult = (N, arr) => {
   }
   return [saveStart, saveEnd]
 }
-console.log(getResult(N, arr))
+let rz = getResult(N, arr)
+console.log(`${arr[rz[0]].toFixed(4)},${arr[rz[1]].toFixed(4)}`)
