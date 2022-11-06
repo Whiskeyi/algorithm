@@ -3,7 +3,7 @@ const n = 467, target = 6;
 // const n = 19, target = 1;
 
 /**
- * 整体思路【贪心】，从末尾往前依次 加上 能进位的数字 大小
+ * 整体思路【贪心】，从末尾往前依次 加上 能进位的数字大小
  */
 var makeIntegerBeautiful = function (n, target) {
   // 分隔n为数字数组
