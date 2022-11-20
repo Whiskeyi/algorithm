@@ -28,7 +28,7 @@ var subarrayLCM = function (nums, k) {
     for (let j = i + 1; j <= nums.length; j++) {
       let newArr = nums.slice(i, j);
       let res = scms(newArr);
-      // 剪枝
+      // !!剪枝
       if (k % res !== 0) {
         break;
       }
