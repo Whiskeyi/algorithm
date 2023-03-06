@@ -990,3 +990,29 @@ fn(4); */
 // console.log(NaN + 1)
 
 // console.log(~~00)
+
+/* let arr = [1,2,3,4,5];
+let arr2 = [1, , 3];
+
+// arr.length = 3;
+// arr[10] = 11;
+// delete arr[2];
+console.log(arr.length);
+console.log(arr2.length); */
+
+// const test = [
+//   {
+//     url: '1'
+//   },
+//   {
+//     url: '2',
+//   },
+//   {
+//     url: '3'
+//   }
+// ];
+
+// console.log(test.map(item => item.url));
+
+// const str = '2022年2月29fkabfkjab擦妇科疾病次卡'
+// console.log(str.replace(/(\d+)年(\d+)月(\d+)日/, '$1-$2-$3'))
