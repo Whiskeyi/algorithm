@@ -46,4 +46,30 @@ var lengthOfLongestSubstring = function(s) {
     }
     return max;
 };
-document.getElementsByTagName('ul')
+
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var lengthOfLongestSubstring = function (s) {
+    // 双指针
+    let a = 0, b = 0;
+    let maxLength = s.length ? 1 : 0;
+    // 记录已经遍历过的字符串，空间O(n)
+    let saveArr = [s[0]];
+    while (b < s.length - 1) {
+        if (!saveArr.includes(s[b + 1])) {
+            saveArr.push(s[b + 1])
+            b++;
+            maxLength = Math.max(saveArr.length, maxLength)
+        } else {
+            a++;
+            b = a;
+            saveArr = [s[a]]
+        }
+    }
+
+    return maxLength;
+};
+
+console.log(lengthOfLongestSubstring("pwwkew")) // 3
